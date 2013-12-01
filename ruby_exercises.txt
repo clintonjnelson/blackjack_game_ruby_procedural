@@ -1,0 +1,74 @@
+Note: we're looking for Ruby commands for the below questions, not the actual answers, unless it's a question. 
+
+Hint: you can type "irb" in your terminal to get a Ruby console to test things out. For multi-line code, use an editor that can run Ruby code, or copy/paste into irb.
+
+Hint 2: you can refer to the Ruby doc for Array and Hash here: 
+
+http://www.ruby-doc.org/core-1.9.3/Array.html
+http://www.ruby-doc.org/core-1.9.3/Hash.html
+
+
+1. Use the "each" method of Array to iterate over [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], and print out each value.
+	(1..10).each{|num| puts num}
+	
+	OR
+	num_array = [1,2,3,4,5,6,7,8,9,10]
+	num_array.each{|num| puts num}
+
+2. Same as above, but only print out values greater than 5.
+	num_array.each{|num| puts num if num > 5}
+
+3. Now, using the same array from #2, use the "select" method to extract all odd numbers into a new array.
+	even_array = num_array.select{|num| num%2 == 1}
+
+4. Append "11" to the end of the array. Prepend "0" to the beginning.
+	num_array.push(11)
+	OR
+	num_array << (11)
+
+	num_array.unshift(0)
+	OR  
+	num_array.insert(0, 0)
+
+5. Get rid of "11". And append a "3".
+	num_array.delete(11)
+	num_array << (3)
+
+6. Get rid of duplicates without specifically removing any one value. 
+	num_array.uniq!
+
+7. What's the major difference between an Array and a Hash?
+	The major difference between an array and a hash is that a hash has a key relation to a value, whereas an array has an ordered-index-keyed system. This means that the hash has a static key and the array has a variable key - assigned by its current location in the array(and this location can change - not only in the array itself, but also on the computer memory). The runner-up major difference is that a hash can use a symbol as a key - creating a static location in memory where this key-value pair is mapped to. This results in MUCH faster searching not just because of the static-key searching, but also the static-memory-slot location. The primary drawback to this super-fast searching is that the key-values are loaded & take up space in the memory where they are stored. Tradeoff of performance vs storage.
+
+ 
+8. Create a Hash using both Ruby 1.8 and 1.9 syntax.
+	hash18 = {key, 'value', key2, 'value2'}
+	hash19 = {key:'value', key2:'value2'}
+
+
+Suppose you have a h = {a:1, b:2, c:3, d:4}
+	
+9. Get the value of key "b".
+	h[:b]
+
+10. Add to this hash the key:value pair {e:5}
+	h[:e] = 5
+
+13. Remove all key:value pairs whose value is less than 3.5
+	h.delete_if{|key,value| value <= 3.5}
+
+14. Can hash values be arrays? Can you have an array of hashes? (give examples)
+	Yes. 
+		array_hash = {a: [1, 2, 3], b: [4, 5, 6]} 
+	Yes. 
+		hash_array = [{a: [1, 2, 3], b: [4, 5, 6]}, {c: [7, 8, 9], d: [10, 11, 12]}]
+
+
+15. Look at several Rails/Ruby online API sources and say which one your like best and why.
+I usually find myself going to ruby-doc, probably because it's the most prevalent in Google searches.
+Others:
+	- RailsAPI.com
+	- APIDock.com
+	- OmniRef.com	#mentioned by Chris - a great "hidden" resource!
+	
+		
