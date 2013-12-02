@@ -19,7 +19,7 @@
 \
 \ul Source Code Layout\ulnone \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
-\ls1\ilvl0\cf0 {\listtext	\uc0\u8259 	}BE CONSISTENT in your coding\
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8259 	}BE CONSISTENT in your coding.\
 {\listtext	\uc0\u8259 	}UTF-8 as source file encoding\
 {\listtext	\uc0\u8259 	}2-spaces per indentation (no tabs)\
 {\listtext	\uc0\u8259 	}One expression per line. Don't use " ; " for multi expressions on 1 line. ","=OK\
@@ -72,8 +72,9 @@
 {\listtext	\uc0\u8259 	}Almost never use "for". There are other ways. Another problem is for's variable scope not limited.\
 {\listtext	\uc0\u8259 	}Never use "then" in a multi-line " if " statement\
 {\listtext	\uc0\u8259 	}Always put the " if " condition on the same line as the " if "\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls2\ilvl0
-\b {\listtext	\uc0\u8259 	}Use the ?: constructs instead of the if/then/else/end. 
+\b \cf0 {\listtext	\uc0\u8259 	}Use the ?: constructs instead of the if/then/else/end. 
 \b0 #gotta study this way of writing - seems good!\
 \pard\tx940\tx1440\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1440\fi-1440\ql\qnatural\pardirnatural
 \ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}This is called the "ternary operator"\
@@ -120,8 +121,9 @@
 {\listtext	\uc0\u8259 	}Never put a space between a method name & the opening parenthesis\
 {\listtext	\uc0\u8259 	}If the first argument begins with an open parenthesis, always use parenthesis in the method invocatn\
 {\listtext	\uc0\u8259 	}Always run the ruby interpreter with the -w option, so it'll warn you if you forgot any of the rules!\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls2\ilvl0
-\b {\listtext	\uc0\u8259 	}Use the new lambda literal syntax for single-line body blocks.
+\b \cf0 {\listtext	\uc0\u8259 	}Use the new lambda literal syntax for single-line body blocks.
 \b0  #Probably need to learn this syntax\
 {\listtext	\uc0\u8259 	}Use proc instead of Proc.new\
 {\listtext	\uc0\u8259 	}Use proc.call() instead of proc[] or proc.()\
@@ -133,8 +135,8 @@
 {\listtext	\uc0\u8259 	}Use Array#join instead of Array#*. \
 \pard\tx940\tx1440\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1440\fi-1440\ql\qnatural\pardirnatural
 \ls2\ilvl1\cf0 {\listtext	
-\b \uc0\u8259 	}it shows the %w(___ ___ ___ ) format. Should probably learn this syntax
-\b0 \
+\b \uc0\u8259 	}
+\b0 it shows the %w(___ ___ ___ ) format. Should probably learn this syntax\
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls2\ilvl0\cf0 {\listtext	\uc0\u8259 	}Use [*var] or Array() instead of an explicit variable you want to treat as an array but aren't sure is one\
 {\listtext	\uc0\u8259 	}Use ranges Comparable#between? instead of complex comparison logic ##cool for quick narrowing\
@@ -147,7 +149,7 @@
 {\listtext	\uc0\u8259 	}Avoid use of flip-flops		#what is this?\
 {\listtext	\uc0\u8259 	}Avoid use of nested conditionals. Nested conditionals are messy with indenting - "return unless __ can be much easier. \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
-\cf0 \ul \ulc0 Naming\ulnone \
+\cf0 \ul Naming\ulnone \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls3\ilvl0\cf0 {\listtext	\uc0\u8259 	}Name identifiers should be in standard English language\
 {\listtext	\uc0\u8259 	}Use "snake_case" for symbols, methods, and variables\
@@ -168,7 +170,7 @@
 \ls3\ilvl0\cf0 {\listtext	\uc0\u8259 	}Use flat_map instead of map + flatten. This does not apply for arrays inside of arrays. Then use m+f\
 {\listtext	\uc0\u8259 	}Use reverse_each instead of reverse.each.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
-\cf0 \ul \ulc0 Comments\ulnone \
+\cf0 \ul Comments\ulnone \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls4\ilvl0\cf0 {\listtext	\uc0\u8259 	}Write self-documenting code and ignore all of this section\
 {\listtext	\uc0\u8259 	}Write comments in English\
@@ -178,7 +180,7 @@
 {\listtext	\uc0\u8259 	}Keep existing comments put to date. But an outdated comment is worse than no comment at all.\
 {\listtext	\uc0\u8259 	}MAKE THE CODE SELF-EXPLANATORY. Avoid using comments to explain bad code.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
-\cf0 \ul \ulc0 Comment Annotations\ulnone \
+\cf0 \ul Comment Annotations\ulnone \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls5\ilvl0\cf0 {\listtext	\uc0\u8259 	}Annotations should be written on the line immediately above the relevant code\
 {\listtext	\uc0\u8259 	}The annotation keyword is followed by a semi-colon and a space, then a note describing the problem\
@@ -194,7 +196,7 @@
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls5\ilvl0\cf0 {\listtext	\uc0\u8259 	}Custom annotations - may be used if appropriate. Include them in the program README if do.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
-\cf0 \ul \ulc0 Classes & Methods\ulnone \
+\cf0 \ul Classes & Methods\ulnone \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls6\ilvl0\cf0 {\listtext	\uc0\u8259 	}Use consistent structure in your class definitions\
 \pard\tx940\tx1440\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li1440\fi-1440\ql\qnatural\pardirnatural
@@ -240,7 +242,7 @@
 \ls6\ilvl0\cf0 {\listtext	\uc0\u8259 	}Indent the public, protected, and private method Labels as much as the defs they apply to.\
 {\listtext	\uc0\u8259 	}Use def "self.method" to define singleton methods. Makes code easier to refractor since name not repeated.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
-\cf0 \ul \ulc0 Exceptions\ulnone \
+\cf0 \ul Exceptions\ulnone \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls7\ilvl0\cf0 {\listtext	\uc0\u8259 	}Signal exceptions using the "fail" method. Use raise only when catching an exception & re-raising it. This is because it is not a failure, it is a purposeful raising.\
 {\listtext	\uc0\u8259 	}Done specify RuntimeError explicitly in the two-argument version of raise/fail. (signaled by default!)\
@@ -255,7 +257,7 @@
 {\listtext	\uc0\u8259 	}Put more specific exceptions higher up in the rescue chain, else they'll never be rescued from\
 {\listtext	\uc0\u8259 	}Release external resources obtained by the program in an ensure block #???\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
-\cf0 \ul \ulc0 Collections\ulnone \
+\cf0 \ul Collections\ulnone \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls8\ilvl0\cf0 {\listtext	\uc0\u8259 	}Prefer literal array & hash creation notation (unless need to pass their parameters to constructors)\
 {\listtext	\uc0\u8259 	}Prefer %w to the literal array syntax when you need an array of words (non-empty strings without spaces & special chars in them). Apply this rule only to arrays with 2+ elements.\
@@ -280,7 +282,7 @@
 {\listtext	\uc0\u8259 	}Rely on the fact that Ruby1.9 hashes are ordered\
 {\listtext	\uc0\u8259 	}Never modify a collection while traversing it!\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
-\cf0 \ul \ulc0 Strings\ulnone \
+\cf0 \ul Strings\ulnone \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls9\ilvl0\cf0 {\listtext	\uc0\u8259 	}Prefer string interpolation instead of string concatenation (using #\{\} instead of " + ")\
 {\listtext	\uc0\u8259 	}Consider padding string interpolation with space for readability\
